@@ -13,7 +13,7 @@ function Header() {
   return (
     <div>
       <Box sx={{ flexGrow: 1 }}>
-      <AppBar sx={{backgroundColor:'black'}} position="static">
+      <AppBar sx={{backgroundColor:'#1e1e24' /*'black'*/}} position="static">
         <Toolbar>
           <IconButton
             size="large"
@@ -22,16 +22,16 @@ function Header() {
             aria-label="menu"
             sx={{ mr: 2 }}
           >
-           <img width={'40 px'} src={logo} alt="logo" />
+           <Link to={'/'}><img width={'40 px'} src={logo} alt="logo" /></Link>
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight:'bold' }}>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight:'bold', fontFamily: '"Open Sans", sans-serif' }}>
             <Link to={'/'} style={{textDecoration:'none', color:'white'}}>
             REQUESTO
             </Link>
           </Typography>
-          <Link to={'/lend'} style={{textDecoration:'none', color:'white'}}><Button color="inherit">Lend</Button></Link>
-          <Link to={'/request'} style={{textDecoration:'none', color:'white'}}><Button color="inherit">Request</Button></Link>
-          <Link to={'/'} style={{textDecoration:'none', color:'white'}}><Button color="inherit">Admin</Button></Link>
+          <Link to={'/lend'} style={{textDecoration:'none', color:'white'}}><Button color="inherit">Request</Button></Link>
+          <Link to={'/request'} style={{textDecoration:'none', color:'white'}}><Button color="inherit">Provide</Button></Link>
+          <Link to={'/login'} style={{textDecoration:'none', color:'white'}}><Button color="inherit">Admin</Button></Link>
         </Toolbar>
       </AppBar>
     </Box>
