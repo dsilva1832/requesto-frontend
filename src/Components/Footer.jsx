@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <>
+    <div id='footer'>
       <footer style={{backgroundColor:'#1e1e24' /*'black'*/}} className="text-white text-center text-lg-start">
         <div className="container p-4">
           <div className="row">
@@ -22,7 +22,7 @@ function Footer() {
               <h5 className="text-uppercase mb-3">Quick Links</h5>
               <ul className="list-unstyled mb-0">
                 <li><a href="/" className="text-white text-decoration-none">Home</a></li>
-                <li><a href="/lend" className="text-white text-decoration-none">Provide</a></li>
+                <li><a href="/provide" className="text-white text-decoration-none">Provide</a></li>
                 <li><a href="/request" className="text-white text-decoration-none">Request</a></li>
                 <li><a href="" className="text-white text-decoration-none">Contact</a></li>
               </ul>
@@ -42,7 +42,7 @@ function Footer() {
           &copy;Requesto-November 2025, All Rights Reserved to &reg;Alwin Joseph Dsilva
         </div>
       </footer>
-    </>
+    </div>
   )
 }
 

@@ -11,7 +11,7 @@ import logo from '../images/logo.png'
 
 function Header() {
   return (
-    <div>
+    <div id='header'>
       <Box sx={{ flexGrow: 1 }}>
       <AppBar sx={{backgroundColor:'#1e1e24' /*'black'*/}} position="static">
         <Toolbar>
@@ -29,9 +29,9 @@ function Header() {
             REQUESTO
             </Link>
           </Typography>
-          <Link to={'/lend'} style={{textDecoration:'none', color:'white'}}><Button color="inherit">Request</Button></Link>
-          <Link to={'/request'} style={{textDecoration:'none', color:'white'}}><Button color="inherit">Provide</Button></Link>
-          <Link to={'/login'} style={{textDecoration:'none', color:'white'}}><Button color="inherit">Admin</Button></Link>
+          <Link className='headerBtn' to={'/request'} style={{textDecoration:'none', color:'white'}}><Button color="inherit">Request</Button></Link>
+          <Link className='headerBtn' to={'/provide'} style={{textDecoration:'none', color:'white'}}><Button color="inherit">Provide</Button></Link>
+          <Link className='headerBtn' to={'/login'} style={{textDecoration:'none', color:'white'}}><Button color="inherit">Admin</Button></Link>
         </Toolbar>
       </AppBar>
     </Box>

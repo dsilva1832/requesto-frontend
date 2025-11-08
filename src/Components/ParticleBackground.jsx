@@ -1,16 +1,17 @@
-// import { useCallback } from "react";
-// import Particles from "react-tsparticles";
-// import { loadFull } from "tsparticles";
-// import particlesConfig from "./particles-config";
+import { useCallback } from "react";
+import Particles from "react-tsparticles";
+import { loadSlim } from "tsparticles-slim";
 
-// const ParticleBackground = () => {
-//   const particlesInit = useCallback(async (engine) => {
-//     await loadFull(engine);
-//   }, []);
+import particlesConfig from "./particles-config";
 
-//   return (
-//     <Particles id="tsparticles" init={particlesInit} options={particlesConfig} />
-//   );
-// };
+const ParticleBackground = () => {
+  const particlesInit = useCallback(async (engine) => {
+    await loadSlim(engine);
+  }, []);
 
-// export default ParticleBackground;
+  return (
+    <Particles id="tsparticles" init={particlesInit} options={particlesConfig} />
+  );
+};
+
+export default ParticleBackground;

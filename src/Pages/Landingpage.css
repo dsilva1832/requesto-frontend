@@ -4,6 +4,7 @@
   height: 91vh;
   background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
   overflow: hidden; /* Prevent scrollbars if particles overflow */
+  z-index: 1;
 }
 
 #tsparticles {
@@ -20,6 +21,7 @@
   z-index: 1; /* above particles */
   height: 100%;
 }
+
 
 
 
